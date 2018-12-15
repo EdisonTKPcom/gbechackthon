@@ -38,6 +38,33 @@ contract DrugSystem {
 
         drugs[a] = d;
         storedKeys.push(a);
+
+        d.name = "Stenac Tablet 600mg";
+        d.manufacturer = "Synmosa Biopharma Corporation";
+        d.batchNo ="B26881";
+        d.manufacturingDate = "23-08-2017";
+        d.expiryDate = "23-08-2020";
+        d.contents = "Acetylcysteine";
+        d.usage = "Mucus thinning, Paracetamol overdose, Prevention of radiocontrast-induced nephropathy";
+        d.sideEffects = "Rash, Urticaria, Pruritus, Hypotension, Wheezing, Shortness of breath, Nausea, Vomiting, Stomatitis, Fever, Rhinorrhea, Drowsiness, Clamminess, Chest tightness, Bronchoconstriction";
+        d.recalled = false;
+
+        drugs[a] = d;
+        storedKeys.push(a);
+
+        d.name = "Tussidex Forte Linctus";
+        d.manufacturer = "Xepa-Soul Pattinson (Malaysia) Sdn Bhd";
+        d.batchNo ="377872";
+        d.manufacturingDate = "31-07-2018";
+        d.expiryDate = "30-06-2021";
+        d.contents = "Dextromethorphan Hydrobromide 15mg";
+        d.usage = "Cough";
+        d.sideEffects = "Drowsiness, Dizziness, Nausea, Vomiting, Restlessness";
+        d.recalled = false;
+
+        drugs[a] = d;
+        storedKeys.push(a);
+
     }
     
     function recallDrug(address drug) public {
@@ -57,8 +84,17 @@ contract DrugSystem {
         return address(addr);
     }
     
-    function getNthDrugName(uint n) public view returns (string) {
-        return drugs[storedKeys[n]].name;
+        
+    function getDrugsCount() public view returns (uint) {
+        return storedKeys.length;
+    }
+
+    function getNthDrugAddress(uint n) public view returns (address) {
+        return storedKeys[n];
+    }
+    
+    function getDrugName(address drug) public view returns (string) {
+        return drugs[drug].name;
     }
 
     function isRecalled(address drug) public view returns (bool) {
