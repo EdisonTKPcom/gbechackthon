@@ -12,6 +12,7 @@ import { FcmProvider } from '../providers/fcm/fcm';
 
 
 import { Firebase } from '@ionic-native/firebase';
+import { QrService } from '../providers/qr-service/qr-service';
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
@@ -43,7 +44,7 @@ const config = {
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    FcmProvider
-  ]
+    FcmProvider,
+    QrService  ]
 })
 export class AppModule {}

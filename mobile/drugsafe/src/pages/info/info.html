@@ -1,0 +1,96 @@
+<!--
+  Generated template for the InfoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="apptheme">
+    <ion-title color="white">Info</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label item-start>
+        QR:
+      </ion-label>
+      <ion-note item-end>
+        {{data.qr}}
+      </ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label item-start>
+        First Date Issue:
+      </ion-label>
+      <ion-note item-end>
+        {{data.first_date_issue}}
+      </ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label item-start>
+        Date Issue:
+      </ion-label>
+      <ion-note item-end>
+        {{data.date_issue}}
+      </ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label item-start>
+        Certificate:
+      </ion-label>
+      <ion-note item-end>
+        {{data.cert}}
+      </ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label item-start>
+        Reference:
+      </ion-label>
+      <ion-note item-end>
+        {{data.ref}}
+      </ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label item-start>
+        Company:
+      </ion-label>
+      <ion-note item-end>
+        {{data.company}}
+      </ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label item-start>
+        Registered:
+      </ion-label>
+      <ion-note item-end>
+        {{data.registered}}
+      </ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label item-start>
+        Status:
+      </ion-label>
+      <ion-note item-end>
+        {{data.status}}
+      </ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label item-start>
+            Expired Date:
+      </ion-label>
+      <ion-note item-end>
+        {{data.expired}}
+      </ion-note>
+    </ion-item>
+
+    <!-- <button ion-item *ngFor="let item of items">
+          <ion-icon [name]="item.icon" item-start></ion-icon>
+          {{item.title}}
+          <div class="item-note" item-end>
+            {{item.note}}
+          </div>
+        </button> -->
+  </ion-list>
+</ion-content>
