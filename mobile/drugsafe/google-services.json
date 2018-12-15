@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "654467136074",
+    "firebase_url": "https://drugsafe-4cc04.firebaseio.com",
+    "project_id": "drugsafe-4cc04",
+    "storage_bucket": "drugsafe-4cc04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654467136074:android:c1c6bc8b7748b1be",
+        "android_client_info": {
+          "package_name": "com.edisontkp.drugsafe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "654467136074-ge1mgb155i8uqkeomb9q672lekotp86l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwuE5hFlv7rTaMR9GgxLc9ZmzTbQk4BLQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
