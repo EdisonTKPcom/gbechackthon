@@ -39,6 +39,8 @@ contract DrugSystem {
         drugs[a] = d;
         storedKeys.push(a);
 
+        a = getUniqueId();
+
         d.name = "Stenac Tablet 600mg";
         d.manufacturer = "Synmosa Biopharma Corporation";
         d.batchNo ="B26881";
@@ -52,6 +54,8 @@ contract DrugSystem {
         drugs[a] = d;
         storedKeys.push(a);
 
+        a = getUniqueId();
+
         d.name = "Tussidex Forte Linctus";
         d.manufacturer = "Xepa-Soul Pattinson (Malaysia) Sdn Bhd";
         d.batchNo ="377872";
@@ -64,7 +68,6 @@ contract DrugSystem {
 
         drugs[a] = d;
         storedKeys.push(a);
-
     }
     
     function recallDrug(address drug) public {
