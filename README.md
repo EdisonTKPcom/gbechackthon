@@ -23,6 +23,6 @@ Team Member:
 
 3)Vincent Wong, 
 
-4)
+4)Lee Boon Leng, boringdragonlee@gmail.com
 
 Any additional info you might want to share now
