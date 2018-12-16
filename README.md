@@ -12,9 +12,9 @@ Link to Code : https://github.com/EdisonTKPcom/gbechackthon
 
 Team Members and Contact info
 Team Member: 
-Edison Tan, im@edisontkp.com
-Ian Phoon, jyphoon@gmail.com
-Vincent Wong, 
-
+#### 1)Edison Tan, im@edisontkp.com
+#### 2)Ian Phoon, jyphoon@gmail.com
+#### 3)Vincent Wong, 
+#### 4)
 
 Any additional info you might want to share now
