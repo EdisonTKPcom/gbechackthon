@@ -2,6 +2,7 @@
 ![hackathon banner](https://github.com/GoBlockchainNetwork/HackathonMalaysia2018/blob/master/docs/banner.jpg)
 
 Project Title: DrugSafe
+![app](https://github.com/EdisonTKPcom/gbechackthon/blob/master/web/logo_ori.png)
 
 Project Description
 
