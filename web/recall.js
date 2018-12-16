@@ -281,6 +281,16 @@ function getDrugDetails() {
   });
 }
 
+function recallDrug() {
+	contractInstance.recallDrug('0x1936c24Da826d691a8bB53b107Ad031E1f4Cb724', function(err, result) {
+		if (!err) {
+			console.log('Recall drug');
+		} else {
+			console.log(err);
+		}
+	});
+}
+
 window.addEventListener('load', function() {
 // Checking if Web3 has been injected by the browser (Mist/MetaMask)
   if (typeof web3 !== 'undefined') {
