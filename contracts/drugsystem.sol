@@ -117,4 +117,12 @@ contract DrugSystem {
     function isRecalled(address drug) public view returns (bool) {
         return drugs[drug].recalled;
     }
+
+    function resetAll() public {
+        uint len = storedKeys.length;
+
+        for (uint i = 0; i<len; i++) {
+            drugs[storedKeys[i]].recalled = false;
+        }
+    }
 }

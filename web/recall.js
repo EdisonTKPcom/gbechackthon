@@ -204,7 +204,9 @@ var web3;
 function initApp(){
   myAccount = web3.eth.accounts[0];
   myContract = web3.eth.contract(abi);
-  contractInstance = myContract.at(smartContractAddress);
+	contractInstance = myContract.at(smartContractAddress);
+	
+	getDrugDetails();
 }
 
 function updateMessageValue() {
@@ -263,11 +265,15 @@ contractInstance.getDrugName(result, function(err, result) {
 }
 
 
-function getDrugsCount() {
-  contractInstance.getDrugsCount(function(err, result) {
+function getDrugDetails() {
+  contractInstance.getDrugDetail1('0x1936c24Da826d691a8bB53b107Ad031E1f4Cb724', function(err, result) {
     if (!err){
       console.log('Fetched msg value from blockchain:',result); 
-      document.getElementById("message").innerText=result;
+      document.getElementById("drug-name").innerText=result[0];
+      document.getElementById("manufacturer").innerText=result[1];
+      document.getElementById("batch-no").innerText=result[2];
+      document.getElementById("expiry-date").innerText=result[4];
+      document.getElementById("manufacturing-date").innerText=result[3];
     }
     else{
       console.log(err);
