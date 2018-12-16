@@ -21,7 +21,7 @@ Team Member:
 
 2)Ian Phoon, jyphoon@gmail.com
 
-3)Vincent Wong, 
+3)Vincent Wong, vincent.tsn@gmail.com
 
 4)Lee Boon Leng, boringdragonlee@gmail.com
 
